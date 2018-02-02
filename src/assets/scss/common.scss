@@ -1,0 +1,10 @@
+//px转rem函数
+@function  pxTorem($px){
+  $default-font-size : 37.5px;
+  @return $px / $default-font-size rem;
+}
+//基本变量
+$active-color: #ff5046;
+$bg-color: #fff;
+$head-foot-color:#999;
+

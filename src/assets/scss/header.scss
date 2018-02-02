@@ -1,0 +1,18 @@
+@import "common";
+.header{
+  position: fixed;
+  width: 100%;
+  height: pxTorem(38px);
+  left:0;
+  top:0;
+  background: $bg-color;
+  overflow: hidden;
+  .tab-item{
+    float: left;
+    width: 25%;
+    height: pxTorem(38px);
+    line-height: pxTorem(38px);
+    color: $head-foot-color;
+    font-size: pxTorem(13px);
+  }
+}
