@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    <foot-con></foot-con>
   </div>
 </template>
 
 <script>
-
+import footCon from 'components/footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    footCon
+  }
 }
 </script>
 

@@ -9,11 +9,18 @@ import fastclick from 'fastclick'
 import store from './store'
 Vue.use(MuseUI)
 fastclick.attach(document.body)
-Vue.config.productionTip = false;
-
-let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-let htmlEle = document.getElementsByTagName("html")[0];
-htmlEle.style.fontSize = htmlWidth/10 + "px";
+Vue.config.productionTip = false
+window.onload = function () {
+  getRem(640, 100)
+}
+window.onresize = function () {
+  getRem(640, 100)
+}
+function getRem (pwidth, prem) {
+  var html = document.getElementsByTagName('html')[0]
+  var oWidth = document.body.clientWidth || document.documentElement.clientWidth
+  html.style.fontSize = oWidth / pwidth * prem + 'px'
+}
 
 /* eslint-disable no-new */
 new Vue({
