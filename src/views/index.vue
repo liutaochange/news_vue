@@ -11,11 +11,13 @@
 </template>
 <script>
 import headCon from 'components/header'
-import loading from 'components/loading'
+import loading from 'components/loading/loading'
+import newsList from 'components/news-list'
 export default {
   components: {
     headCon,
-    loading
+    loading,
+    newsList
   }
 }
 </script>

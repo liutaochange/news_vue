@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
-    <img src="assets/images/loading.gif" alt="img" width="24" height="24">
-    <p class="text"></p>
+    <img src="./loading.gif" alt="img" width="24" height="24">
+    <p class="text">{{text}}</p>
   </div>
 </template>
 <script>
@@ -32,7 +32,7 @@ export default {
     }
     p{
       width: 100%;
-      font-size: 15px;
+      font-size: pxTorem(30px);
       text-align: center;
       margin: 5px 0;
     }
