@@ -32,7 +32,7 @@ export default {
     }
     p{
       width: 100%;
-      font-size: pxTorem(30px);
+      font-size: pxTorem(26px);
       text-align: center;
       margin: 5px 0;
     }

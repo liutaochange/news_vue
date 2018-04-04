@@ -3,11 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import MuseUI from 'muse-ui'
-import 'muse-ui/dist/muse-ui.css'
 import fastclick from 'fastclick'
 import store from './store'
-Vue.use(MuseUI)
 fastclick.attach(document.body)
 Vue.config.productionTip = false
 getRem(640, 100)
