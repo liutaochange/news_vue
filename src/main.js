@@ -7,19 +7,18 @@ import fastclick from 'fastclick'
 import store from './store'
 fastclick.attach(document.body)
 Vue.config.productionTip = false
-getRem(640, 100)
-window.onresize = function () {
-  getRem(640, 100)
-}
-function getRem (pwidth, prem) {
-  var html = document.getElementsByTagName('html')[0]
-  var oWidth = document.body.clientWidth || document.documentElement.clientWidth
-  if (oWidth >= 640) {
-    oWidth = 640
+function rem () {
+  let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth
+  const htmlDom = document.getElementsByTagName('html')[0]
+  if (htmlWidth >= 540) {
+    htmlWidth = 540
   }
-  html.style.fontSize = oWidth / pwidth * prem + 'px'
+  htmlDom.style.fontSize = htmlWidth / 10 + 'px'
 }
-
+rem()
+window.addEventListener('resize', function () {
+  rem()
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -23,7 +23,6 @@ export default {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
     img{
       display: inline-block;
       width: 24px;
@@ -32,7 +31,7 @@ export default {
     }
     p{
       width: 100%;
-      font-size: pxTorem(26px);
+      font-size: pxTorem(16px);
       text-align: center;
       margin: 5px 0;
     }

@@ -2,26 +2,27 @@
 .header{
   position: fixed;
   width: 100%;
-  height: pxTorem(78px);
+  height: pxTorem(38px);
   left:0;
   top:0;
   background: $bg-color;
   .header-center{
     width: 100%;
     height: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
     margin: 0 auto;
-    max-width: 640px;
+    padding: 0 pxTorem(10px);
+    max-width: $max-width;
+    @extend .box-sizing;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     .tab-item{
-      float: left;
-      width: 25%;
-      height: pxTorem(78px);
-      line-height: pxTorem(78px);
+      width: pxTorem(80px);
+      height: pxTorem(38px);
+      line-height: pxTorem(38px);
       color: $head-font-color;
-      font-size: pxTorem(26px);
+      font-size: pxTorem(16px);
       text-align: center;
       &.active{
         color: $active-color;

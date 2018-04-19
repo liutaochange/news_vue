@@ -1,16 +1,17 @@
 //px转rem函数
 @function  pxTorem($px){
-  $default-font-size : 100px;
+  $default-font-size : 37.5px;
   @return $px / $default-font-size * 1rem;
 }
 //基本变量
 $active-color: #ff5046;
 $bg-color: #fff;
 $head-font-color:#999;
+$max-width: 540px;
 *{margin: 0;padding: 0;}
 html,body {
   width: 100%;
-  max-width: 640px;
+  max-width: $max-width;
   margin: 0 auto;
   height: 100%;
 }
@@ -19,4 +20,25 @@ html{
 }
 body{
   font-size: 14px;
+}
+.box-sizing{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.filter100{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+.filterNone{
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none;
 }
