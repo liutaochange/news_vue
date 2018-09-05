@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
 import store from './store'
-Vue.use(MuseUI)
+import './assets/js/rem'
 
 fastclick.attach(document.body)
 Vue.config.productionTip = false

@@ -25,8 +25,8 @@ export default {
     transform: translateY(-50%);
     img{
       display: inline-block;
-      width: 24px;
-      height: 24px;
+      width: 48px;
+      height: 48px;
       vertical-align: top;
     }
     p{
