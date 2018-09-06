@@ -1,4 +1,20 @@
 export const baseUrl = 'http://is.snssdk.com/api/news/feed/v51/'
+export const type = {
+	news_hot: '热点',
+	video: '视频',
+  news_society: '社会',
+	news_entertainment: '娱乐',
+	question_and_answer: '问答',
+	images: '组图',
+	news_tech: '科技',
+	news_car: '汽车',
+	news_sport: '体育',
+	news_finance: '财经',
+	news_military: '军事',
+	news_world: '国际',
+	essay_joke: '段子',
+	image_funny: '趣图'
+}
 export const data = {
   category: 'news_hot',
   refer: 1,
